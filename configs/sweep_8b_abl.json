@@ -1,0 +1,62 @@
+[
+ {
+  "name": "allocB-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "rank_choices": [
+   32
+  ]
+ },
+ {
+  "name": "allocR-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "bit_choices": [
+   2
+  ]
+ },
+ {
+  "name": "allocB-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "rank_choices": [
+   32
+  ]
+ },
+ {
+  "name": "allocR-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "bit_choices": [
+   3
+  ]
+ },
+ {
+  "name": "allocB-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "rank_choices": [
+   32
+  ]
+ },
+ {
+  "name": "allocR-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "bit_choices": [
+   4
+  ]
+ }
+]

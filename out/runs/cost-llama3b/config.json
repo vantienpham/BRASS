@@ -1,0 +1,7 @@
+{
+  "model": "meta-llama/Llama-3.2-3B",
+  "hessian_dir": "out/runs/stats-llama3b/hessians",
+  "run_dir": "out/runs/cost-llama3b",
+  "rank": 32,
+  "bits": 3
+}

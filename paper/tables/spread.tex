@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Layer heterogeneity and the coding gain it predicts, measured from calibration statistics alone. $a_\ell$ is the difficulty coefficient \eqref{eq:bitrule}; the predicted saving is $\frac{1}{2}\log_2(\tilde a_A/\tilde a_G)$ of \cref{thm:codinggain}, evaluated at the stated rank.}
+\label{tab:spread}
+\begin{tabular}{lcccc}
+\toprule
+quantity & Qwen3-0.6B & Qwen3-1.7B & Llama-3.2-3B & Qwen3-8B \\
+\midrule
+layers & 196 & 196 & 196 & 252 \\
+$\log_2 a_\ell$ range (bits) & 25.2 & 26.5 & 23.0 & 25.7 \\
+$\log_2 a_\ell$ std.\ dev.\ (bits) & 3.72 & 4.20 & 2.87 & 5.49 \\
+\midrule
+gain at $r=0$ ($\times$) & 4.46 & 17.53 & 4.50 & 26.49 \\
+gain at $r=8$ ($\times$) & 3.08 & 3.97 & 1.71 & 8.96 \\
+gain at $r=32$ ($\times$) & 2.94 & 3.73 & 1.71 & 8.61 \\
+saving at $r=0$ (bits/wt) & 1.08 & 2.07 & 1.08 & 2.36 \\
+saving at $r=8$ (bits/wt) & 0.81 & 0.99 & 0.39 & 1.58 \\
+saving at $r=32$ (bits/wt) & 0.78 & 0.95 & 0.39 & 1.55 \\
+\bottomrule
+\end{tabular}
+\end{table}

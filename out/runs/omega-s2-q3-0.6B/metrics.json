@@ -1,0 +1,17 @@
+{
+  "base_loss": 2.63091628998518,
+  "refs": [
+    [
+      3,
+      0
+    ]
+  ],
+  "floor_frac": 0.001,
+  "auto_ref": null,
+  "n_layers": 196,
+  "n_floored": 4,
+  "log2_omega_sd": 3.504824236784077,
+  "log2_omega_iqr": 4.42359101622775,
+  "log2_omega_range": 18.354966973227544,
+  "wall_seconds": 189.49850344657898
+}

@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Calibrating the rank factor makes the surrogate more faithful and the model worse. WikiText-2 perplexity ($\downarrow$) on Qwen3-0.6B-Base for the allocator driven by the bound and by the bound with $h_\ell(r)$ rescaled to the measured reduction of \Cref{tab:surrogate}. $\tilde r$ is the median assigned rank. The calibrated allocator declines to buy rank at all, and pays for it exactly where the budget is tightest.}
+\label{tab:calibration}
+\begin{tabular}{lrrrrrr}
+\toprule
+& & \multicolumn{2}{c}{bound-driven} & \multicolumn{2}{c}{calibrated} & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+budget & bpw & PPL & $\tilde r$ & PPL & $\tilde r$ & $\Delta$ \\
+\midrule
+$b=2$, $r=16$ & 2.39 & 51.87 & 4 & 60.78 & 0 & +8.90 \\
+$b=2$, $r=32$ & 2.76 & 25.87 & 4 & 28.57 & 0 & +2.71 \\
+$b=2$, $r=64$ & 3.49 & 15.92 & 4 & 15.92 & 0 & +0.00 \\
+$b=3$, $r=16$ & 3.39 & 16.30 & 4 & 16.41 & 0 & +0.11 \\
+$b=3$, $r=32$ & 3.76 & 14.88 & 4 & 14.90 & 0 & +0.02 \\
+$b=3$, $r=64$ & 4.49 & 13.58 & 4 & 13.61 & 0 & +0.03 \\
+$b=4$, $r=16$ & 4.39 & 13.66 & 4 & 13.72 & 0 & +0.06 \\
+$b=4$, $r=32$ & 4.75 & 13.39 & 4 & 13.39 & 0 & +0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

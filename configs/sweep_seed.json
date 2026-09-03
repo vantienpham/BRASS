@@ -1,0 +1,86 @@
+[
+ {
+  "name": "gilora-b2r32",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "alloc-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "gilora-b3r16",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 16,
+  "method": "gilora"
+ },
+ {
+  "name": "alloc-b3r16",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 16,
+  "method": "gilora"
+ },
+ {
+  "name": "gilora-b3r32",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "alloc-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "gilora-b3r64",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora"
+ },
+ {
+  "name": "alloc-b3r64",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora"
+ },
+ {
+  "name": "gilora-b4r16",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 16,
+  "method": "gilora"
+ },
+ {
+  "name": "alloc-b4r16",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 16,
+  "method": "gilora"
+ },
+ {
+  "name": "gilora-b4r32",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "alloc-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora"
+ }
+]

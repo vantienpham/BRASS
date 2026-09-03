@@ -1,0 +1,131 @@
+[
+ {
+  "name": "gilora-b2r32",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ]
+ },
+ {
+  "name": "allocNW-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ],
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ]
+ },
+ {
+  "name": "gilora-b3r32",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ]
+ },
+ {
+  "name": "allocNW-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ],
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ]
+ },
+ {
+  "name": "gilora-b4r32",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ]
+ },
+ {
+  "name": "allocNW-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ],
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "tasks": [
+   "arc_easy",
+   "arc_challenge",
+   "hellaswag",
+   "winogrande",
+   "piqa"
+  ]
+ }
+]

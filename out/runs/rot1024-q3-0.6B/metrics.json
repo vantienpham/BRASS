@@ -1,0 +1,7 @@
+{
+  "n_layers": 196,
+  "rotate_block": 1024,
+  "hessians_cached": true,
+  "sensitivity_measured": false,
+  "wall_seconds": 83.77246952056885
+}

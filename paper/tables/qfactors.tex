@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Allocation against a uniform baseline whose low-rank factors are themselves quantized ($b_L = 4$, $b_R = 8$, priced at $6$ bits per factor entry). WikiText-2 perplexity ($\downarrow$) at matched storage; the block heading gives the budget in effective bits per weight. Quantizing the factors is close to free in quality and returns real storage, so it competes with allocation for the same budget --- and it absorbs much of what allocation would otherwise win.}
+\label{tab:qfactors}
+\begin{tabular}{llcccc}
+\toprule
+budget & configuration & Qwen3-0.6B & Qwen3-1.7B & Llama-3.2-3B & Qwen3-8B \\
+\midrule
+\multicolumn{6}{l}{\emph{budget of $b=2$, $r=32$: 2.30 / 2.16 / 2.11 / 2.08 bits/weight}} \\
+& uniform, quantized factors & 106.77 & 59.96 & 50.16 & 28.59 \\
+& \method{}, same budget & \textbf{61.45} & \textbf{52.78} & \textbf{37.18} & \textbf{28.42} \\
+\midrule
+\multicolumn{6}{l}{\emph{budget of $b=3$, $r=16$: 3.16 / 3.09 / 3.06 / 3.04 bits/weight}} \\
+& uniform, quantized factors & 18.03 & \textbf{12.29} & \textbf{9.70} & 8.36 \\
+& \method{}, same budget & \textbf{17.64} & 13.06 & 9.83 & \textbf{8.26} \\
+\midrule
+\multicolumn{6}{l}{\emph{budget of $b=3$, $r=32$: 3.30 / 3.16 / 3.11 / 3.08 bits/weight}} \\
+& uniform, quantized factors & 17.62 & \textbf{11.85} & \textbf{9.61} & 8.30 \\
+& \method{}, same budget & \textbf{16.73} & 12.56 & 9.67 & \textbf{8.18} \\
+\midrule
+\multicolumn{6}{l}{\emph{budget of $b=3$, $r=64$: 3.58 / 3.31 / 3.22 / 3.16 bits/weight}} \\
+& uniform, quantized factors & 16.89 & \textbf{11.60} & 9.48 & 8.19 \\
+& \method{}, same budget & \textbf{15.35} & 11.87 & \textbf{9.45} & \textbf{8.04} \\
+\midrule
+\multicolumn{6}{l}{\emph{budget of $b=4$, $r=32$: 4.30 / 4.16 / 4.11 / 4.08 bits/weight}} \\
+& uniform, quantized factors & 13.73 & \textbf{10.01} & \textbf{8.27} & 7.34 \\
+& \method{}, same budget & \textbf{13.68} & 10.36 & 8.37 & \textbf{7.30} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Incoherence preprocessing versus allocation, on Qwen3-0.6B-Base. A block-diagonal randomized Hadamard rotation is applied to each layer, with block size interpolating from none to full. The spectral quantities are invariant by construction (\cref{rem:rotation}) and the measurement confirms it to every reported digit. $r^\star$ is a median over projection types, which differ (\cref{sec:exp:hetero}); what matters is that none of these quantities moves. The difficulty \emph{level} falls, but its \emph{spread} -- the only thing \cref{thm:codinggain} converts into a gain -- does not.}
+\label{tab:rotation}
+\begin{tabular}{rccccc}
+\toprule
+block & $\Delta$ median $\log_2 a_\ell$ & sd of $\log_2 a_\ell$ & coding gain & $T_\ell(8)/T_\ell(0)$ & median $r^\star$ \\
+\midrule
+1 (none) & +0.00 & 3.62 & 11.85 & 0.4993 & 1024 \\
+32 & -0.14 & 3.62 & 11.84 & 0.4993 & 1024 \\
+128 & -0.18 & 3.61 & 11.82 & 0.4993 & 1024 \\
+512 & -0.33 & 3.63 & 11.92 & 0.4993 & 1024 \\
+1024 & -0.36 & 3.61 & 11.63 & 0.4993 & 1024 \\
+\bottomrule
+\end{tabular}
+\end{table}

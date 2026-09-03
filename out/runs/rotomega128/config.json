@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "stats": "out/runs/rot128-q3-0.6B/stats.pt",
+  "out_stats": null,
+  "hessian_dir": "out/runs/rot128-q3-0.6B/hessians",
+  "run_dir": "out/runs/rotomega128",
+  "probe_seqs": 16,
+  "seqlen": 2048,
+  "seed": 0,
+  "ref": [
+    3,
+    0
+  ],
+  "ref2": null,
+  "damp_frac": 0.01,
+  "floor_frac": 0.001
+}

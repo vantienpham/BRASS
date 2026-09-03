@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{The surrogate against the measured distortion surface, on 49 layers of Qwen3-0.6B-Base profiled over a grid of bit-widths and ranks. Top: the bound's rank factor against the measured one, both normalised to $r=0$, with the spread of the measurement across layers. Bottom: the price of allocating with the free bound instead of the measured surface, both scored by the measured surface. Over the same grid, a separable model of $\log D_\ell$ leaves a maximum interaction of 0.026 bits at the median layer and 0.150 at the worst, and the cross-layer Spearman correlation between bound and measurement has median 0.989 and minimum 0.911.}
+\label{tab:surrogate}
+\begin{tabular}{lccccc}
+\toprule
+rank $r$ & 8 & 16 & 32 & 64 & 128 \\
+\midrule
+bound $h_\ell(r)/h_\ell(0)$ & 0.450 & 0.387 & 0.328 & 0.273 & 0.211 \\
+measured $D_\ell(r)/D_\ell(0)$ & 0.921 & 0.880 & 0.816 & 0.736 & 0.617 \\
+measured, p90/p10 across layers & 1.10 & 1.13 & 1.19 & 1.25 & 1.32 \\
+\midrule
+budget (bits/weight) & 2.50 & 3.00 & 3.50 & 4.00 & \\
+bound-driven / measured-driven distortion & 1.27 & 1.19 & 1.25 & 1.24 & \\
+\bottomrule
+\end{tabular}
+\end{table}

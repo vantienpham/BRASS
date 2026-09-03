@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{WikiText-2 perplexity with and without incoherence preprocessing, Qwen3-0.6B-Base. The whole pipeline is rerun in the rotated basis. Rotation helps plain GPTQ most, helps the allocated models at every budget, and \emph{hurts} the uniform low-rank configuration at $b=2$, but it leaves the ratio between the uniform and allocated rows essentially unchanged, which is what \cref{thm:codinggain} predicts of a change that moves the level of $a_\ell$ and not its spread.}
+\label{tab:rotationppl}
+\begin{tabular}{lccc}
+\toprule
+configuration & no rotation & block 128 & block 1024 \\
+\midrule
+GPTQ, $b=2$ & 16815.09 & 9091.53 & 417.02 \\
+\quad uniform, $b=2$, $r=32$ & 121.34 & 234.93 & 174.99 \\
+\quad \method{}, same budget & 25.87 & 27.67 & 22.35 \\
+GPTQ, $b=3$ & 24.75 & 19.95 & 17.20 \\
+\quad uniform, $b=3$, $r=32$ & 17.64 & 17.34 & 16.51 \\
+\quad \method{}, same budget & 14.88 & 14.58 & 14.13 \\
+GPTQ, $b=4$ & 14.97 & 14.02 & 13.68 \\
+\quad uniform, $b=4$, $r=32$ & 13.74 & 13.65 & 13.43 \\
+\quad \method{}, same budget & 13.39 & 13.12 & 13.04 \\
+\midrule
+ratio uniform\,:\,\method{}, $b=3$, $r=32$ & 1.19$\times$ & 1.19$\times$ & 1.17$\times$ \\
+ratio uniform\,:\,\method{}, $b=4$, $r=32$ & 1.03$\times$ & 1.04$\times$ & 1.03$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

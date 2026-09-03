@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Run-to-run variability on Qwen3-0.6B-Base over three independent calibration draws, each a complete pipeline: new Hessians, new clipping search, new sensitivity probe, new allocation. WikiText-2 perplexity, mean $\pm$ standard deviation over the three runs. The allocated models vary less than the uniform ones exactly where the budget binds, and no budget changes which method wins.}
+\label{tab:seeds}
+\begin{tabular}{lrrrr}
+\toprule
+budget & uniform & \method{} & gap & gap\,/\,s.d. \\
+\midrule
+$b=2$, $r=32$ & $124.39 \pm 11.41$ & $26.23 \pm 0.74$ & $98.16$ & $132\times$ \\
+$b=3$, $r=16$ & $18.00 \pm 0.11$ & $16.22 \pm 0.14$ & $1.79$ & $13\times$ \\
+$b=3$, $r=32$ & $17.60 \pm 0.04$ & $14.78 \pm 0.19$ & $2.82$ & $15\times$ \\
+$b=3$, $r=64$ & $16.86 \pm 0.03$ & $13.48 \pm 0.12$ & $3.38$ & $29\times$ \\
+$b=4$, $r=16$ & $13.88 \pm 0.03$ & $13.57 \pm 0.11$ & $0.31$ & $3\times$ \\
+$b=4$, $r=32$ & $13.76 \pm 0.02$ & $13.27 \pm 0.12$ & $0.48$ & $4\times$ \\
+\midrule
+\multicolumn{5}{l}{budgets where the draw changes which method wins: 0 of 6} \\
+\bottomrule
+\end{tabular}
+\end{table}

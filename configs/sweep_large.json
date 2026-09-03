@@ -1,0 +1,139 @@
+[
+ {
+  "name": "gptq-b2",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 0,
+  "method": "gptq"
+ },
+ {
+  "name": "gptq-b3",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 0,
+  "method": "gptq"
+ },
+ {
+  "name": "gptq-b4",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 0,
+  "method": "gptq"
+ },
+ {
+  "name": "olrc-b2r32",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 32,
+  "method": "gptq_olrc"
+ },
+ {
+  "name": "gilora-b2r32",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "allocNW-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "olrc-b3r32",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 32,
+  "method": "gptq_olrc"
+ },
+ {
+  "name": "gilora-b3r32",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "allocNW-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "olrc-b3r64",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 64,
+  "method": "gptq_olrc"
+ },
+ {
+  "name": "gilora-b3r64",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora"
+ },
+ {
+  "name": "allocNW-b3r64",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora",
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b3r64",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora"
+ },
+ {
+  "name": "olrc-b4r32",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 32,
+  "method": "gptq_olrc"
+ },
+ {
+  "name": "gilora-b4r32",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora"
+ },
+ {
+  "name": "allocNW-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "no_omega": true
+ },
+ {
+  "name": "alloc-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora"
+ }
+]

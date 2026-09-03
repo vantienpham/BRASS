@@ -1,0 +1,26 @@
+{
+  "sweep-q3-0.6B": {
+    "measured_median": 0.27687965018084304,
+    "measured_min": 0.003565431865015789,
+    "measured_max": 0.5270328855787327,
+    "predicted_median": 0.7894852985451022
+  },
+  "sweep-q3-1.7B": {
+    "measured_median": -0.009426963295518398,
+    "measured_min": -0.3553679706127708,
+    "measured_max": 0.2565734245022293,
+    "predicted_median": 0.9671817061668591
+  },
+  "sweep-llama3b": {
+    "measured_median": 0.16615144200074483,
+    "measured_min": -0.3538221170464233,
+    "measured_max": 0.4267149989685093,
+    "predicted_median": 0.38403161368430694
+  },
+  "sweep-q3-8B": {
+    "measured_median": 0.003519399154589209,
+    "measured_min": -0.0015254164873912401,
+    "measured_max": 0.26028349139403995,
+    "predicted_median": 0.9245593544207826
+  }
+}

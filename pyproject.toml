@@ -1,0 +1,33 @@
+[project]
+name = "qlr-alloc"
+version = "0.1.0"
+description = "Rate-distortion budget allocation for low-precision plus low-rank neural network compression"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch<2.7",
+    "numpy>=1.24",
+    "transformers>=4.51",
+    "datasets>=2.19",
+    "safetensors>=0.4",
+    "accelerate>=0.30",
+    "sentencepiece>=0.2",
+    "protobuf>=4.25",
+    "tqdm>=4.66",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-timeout>=2.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qlr"]
+
+[tool.pytest.ini_options]
+markers = ["slow: long-running", "gpu: needs a GPU"]
+testpaths = ["tests"]
+# so `pytest` works in a fresh clone without `pip install -e .` first
+pythonpath = ["src"]

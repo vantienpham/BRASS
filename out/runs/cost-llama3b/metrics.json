@@ -1,0 +1,21 @@
+{
+  "model": "meta-llama/Llama-3.2-3B",
+  "n_layers": 196,
+  "widest_in": 8192,
+  "model_params_M": 3212.749824,
+  "model_fp16_MB": 6127.833984375,
+  "hessian_MB": 256.0,
+  "eigendecomposition": {
+    "seconds": 1.4473776817321777,
+    "peak_MB": 2920.25244140625
+  },
+  "augmented factorization": {
+    "seconds": 2.6259024143218994,
+    "peak_MB": 3389.7578125
+  },
+  "quantization pass": {
+    "seconds": 1.041424036026001,
+    "peak_MB": 1147.55126953125
+  },
+  "wall_seconds": 15.790722846984863
+}

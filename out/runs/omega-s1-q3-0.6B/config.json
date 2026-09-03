@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "stats": "out/runs/stats-s1-q3-0.6B/stats.pt",
+  "out_stats": null,
+  "hessian_dir": "out/runs/stats-s1-q3-0.6B/hessians",
+  "run_dir": "out/runs/omega-s1-q3-0.6B",
+  "probe_seqs": 16,
+  "seqlen": 2048,
+  "seed": 1,
+  "ref": [
+    3,
+    0
+  ],
+  "ref2": null,
+  "damp_frac": 0.01,
+  "floor_frac": 0.001,
+  "auto_ref": false,
+  "auto_ref_sample": 16,
+  "auto_ref_min_snr": 10.0
+}

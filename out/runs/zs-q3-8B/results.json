@@ -1,0 +1,481 @@
+[
+  {
+    "name": "fp16",
+    "mode": "none",
+    "wikitext2_ppl": 6.994502067565918,
+    "bits_per_weight": 16.0,
+    "arc_challenge_acc": 0.5307167235494881,
+    "arc_challenge_acc_norm": 0.5477815699658704,
+    "arc_easy_acc": 0.8173333333333334,
+    "arc_easy_acc_norm": 0.7946666666666666,
+    "hellaswag_acc": 0.5066666666666667,
+    "hellaswag_acc_norm": 0.6606666666666666,
+    "piqa_acc": 0.79,
+    "piqa_acc_norm": 0.8006666666666666,
+    "winogrande_acc": 0.7316495659037096,
+    "winogrande_acc_norm": 0.7316495659037096
+  },
+  {
+    "name": "gilora-b2r32",
+    "mode": "uniform",
+    "bits": 2,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "bits_per_weight": 2.2075407608695654,
+    "surrogate_distortion": 2.3486386955160214,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 1.0114741752766057e-08,
+      "geometric_mean": 2.834459909687434e-09,
+      "gain_ratio": 3.5684899681228672,
+      "bits_saved": 0.9176568583648799,
+      "log_spread_std": 3.64440434345766
+    },
+    "bit_histogram": {
+      "2": 252
+    },
+    "rank_histogram": {
+      "32": 252
+    },
+    "wikitext2_ppl": 28.725923538208008,
+    "mean_rel_layer_error": 0.06352084561528169,
+    "arc_easy_acc": 0.426,
+    "arc_easy_acc_norm": 0.43666666666666665,
+    "arc_challenge_acc": 0.24744027303754265,
+    "arc_challenge_acc_norm": 0.28924914675767915,
+    "hellaswag_acc": 0.354,
+    "hellaswag_acc_norm": 0.468,
+    "winogrande_acc": 0.516179952644041,
+    "winogrande_acc_norm": 0.516179952644041,
+    "piqa_acc": 0.594,
+    "piqa_acc_norm": 0.596,
+    "seconds": 1205.1612124443054
+  },
+  {
+    "name": "allocNW-b2r32",
+    "mode": "lagrangian",
+    "bits": 2,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "no_omega": true,
+    "bits_per_weight": 2.207455842391304,
+    "surrogate_distortion": 83594467383.10806,
+    "nu": 35.9218658546833,
+    "gap_bound": 21187578.605941236,
+    "coding_gain": {
+      "arithmetic_mean": 1107.1171785744668,
+      "geometric_mean": 234.73775192449767,
+      "gain_ratio": 4.7164001933978055,
+      "bits_saved": 1.118843069139216,
+      "log_spread_std": 2.651843909832757
+    },
+    "bit_histogram": {
+      "2": 203,
+      "3": 29,
+      "4": 16,
+      "5": 4
+    },
+    "rank_histogram": {
+      "0": 62,
+      "2": 92,
+      "4": 30,
+      "8": 36,
+      "16": 17,
+      "24": 11,
+      "32": 4
+    },
+    "wikitext2_ppl": 26.793066024780273,
+    "mean_rel_layer_error": 0.05516828129300729,
+    "arc_easy_acc": 0.428,
+    "arc_easy_acc_norm": 0.44733333333333336,
+    "arc_challenge_acc": 0.2354948805460751,
+    "arc_challenge_acc_norm": 0.2790102389078498,
+    "hellaswag_acc": 0.3466666666666667,
+    "hellaswag_acc_norm": 0.43466666666666665,
+    "winogrande_acc": 0.5201262825572218,
+    "winogrande_acc_norm": 0.5201262825572218,
+    "piqa_acc": 0.6206666666666667,
+    "piqa_acc_norm": 0.622,
+    "seconds": 1159.3285892009735
+  },
+  {
+    "name": "alloc-b2r32",
+    "mode": "lagrangian",
+    "bits": 2,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "bits_per_weight": 2.205361186594203,
+    "surrogate_distortion": 1.2451719833070003,
+    "nu": 3.9812850184922594e-10,
+    "gap_bound": 0.00602719413385185,
+    "coding_gain": {
+      "arithmetic_mean": 1.2016520707086296e-08,
+      "geometric_mean": 3.527679006971014e-09,
+      "gain_ratio": 3.4063532093879747,
+      "bits_saved": 0.8841140188899559,
+      "log_spread_std": 3.3970198544253445
+    },
+    "bit_histogram": {
+      "2": 186,
+      "3": 46,
+      "4": 11,
+      "5": 9
+    },
+    "rank_histogram": {
+      "0": 31,
+      "2": 74,
+      "4": 40,
+      "8": 68,
+      "16": 25,
+      "24": 12,
+      "32": 2
+    },
+    "wikitext2_ppl": 23.444622039794922,
+    "mean_rel_layer_error": 0.05195929246295924,
+    "arc_easy_acc": 0.518,
+    "arc_easy_acc_norm": 0.49066666666666664,
+    "arc_challenge_acc": 0.2568259385665529,
+    "arc_challenge_acc_norm": 0.310580204778157,
+    "hellaswag_acc": 0.36666666666666664,
+    "hellaswag_acc_norm": 0.47,
+    "winogrande_acc": 0.56353591160221,
+    "winogrande_acc_norm": 0.56353591160221,
+    "piqa_acc": 0.642,
+    "piqa_acc_norm": 0.6346666666666667,
+    "seconds": 1176.1010074615479
+  },
+  {
+    "name": "gilora-b3r32",
+    "mode": "uniform",
+    "bits": 3,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "bits_per_weight": 3.2075407608695654,
+    "surrogate_distortion": 0.5025211413594403,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 1.0114741752766057e-08,
+      "geometric_mean": 2.834459909687434e-09,
+      "gain_ratio": 3.5684899681228672,
+      "bits_saved": 0.9176568583648799,
+      "log_spread_std": 3.64440434345766
+    },
+    "bit_histogram": {
+      "3": 252
+    },
+    "rank_histogram": {
+      "32": 252
+    },
+    "wikitext2_ppl": 8.300140380859375,
+    "mean_rel_layer_error": 0.01618956552263222,
+    "arc_easy_acc": 0.7966666666666666,
+    "arc_easy_acc_norm": 0.7913333333333333,
+    "arc_challenge_acc": 0.4863481228668942,
+    "arc_challenge_acc_norm": 0.537542662116041,
+    "hellaswag_acc": 0.4806666666666667,
+    "hellaswag_acc_norm": 0.6253333333333333,
+    "winogrande_acc": 0.6748224151539068,
+    "winogrande_acc_norm": 0.6748224151539068,
+    "piqa_acc": 0.7633333333333333,
+    "piqa_acc_norm": 0.7773333333333333,
+    "seconds": 1204.1062846183777
+  },
+  {
+    "name": "allocNW-b3r32",
+    "mode": "lagrangian",
+    "bits": 3,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "no_omega": true,
+    "bits_per_weight": 3.203011775362319,
+    "surrogate_distortion": 12731796878.693348,
+    "nu": 2.641306093083693,
+    "gap_bound": 83088305.3358398,
+    "coding_gain": {
+      "arithmetic_mean": 1069.7358425249752,
+      "geometric_mean": 218.3165201976073,
+      "gain_ratio": 4.899930804854864,
+      "bits_saved": 1.146380688063147,
+      "log_spread_std": 2.6673513382843783
+    },
+    "bit_histogram": {
+      "2": 90,
+      "3": 82,
+      "4": 41,
+      "5": 17,
+      "6": 20,
+      "8": 2
+    },
+    "rank_histogram": {
+      "0": 27,
+      "2": 34,
+      "4": 52,
+      "8": 58,
+      "16": 42,
+      "24": 20,
+      "32": 14,
+      "48": 5
+    },
+    "wikitext2_ppl": 10.064273834228516,
+    "mean_rel_layer_error": 0.02981284392954136,
+    "arc_easy_acc": 0.6953333333333334,
+    "arc_easy_acc_norm": 0.6486666666666666,
+    "arc_challenge_acc": 0.3387372013651877,
+    "arc_challenge_acc_norm": 0.38139931740614336,
+    "hellaswag_acc": 0.4206666666666667,
+    "hellaswag_acc_norm": 0.532,
+    "winogrande_acc": 0.5911602209944752,
+    "winogrande_acc_norm": 0.5911602209944752,
+    "piqa_acc": 0.7106666666666667,
+    "piqa_acc_norm": 0.708,
+    "seconds": 1162.3050107955933
+  },
+  {
+    "name": "alloc-b3r32",
+    "mode": "lagrangian",
+    "bits": 3,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "bits_per_weight": 3.2073850769927534,
+    "surrogate_distortion": 0.22236171507901434,
+    "nu": 4.663097208454583e-11,
+    "gap_bound": 5.042412187779113e-05,
+    "coding_gain": {
+      "arithmetic_mean": 1.1732638498180005e-08,
+      "geometric_mean": 3.256533069009751e-09,
+      "gain_ratio": 3.6028003553323886,
+      "bits_saved": 0.9245593544207826,
+      "log_spread_std": 3.5102702413352738
+    },
+    "bit_histogram": {
+      "2": 46,
+      "3": 109,
+      "4": 52,
+      "5": 28,
+      "6": 14,
+      "8": 3
+    },
+    "rank_histogram": {
+      "0": 21,
+      "2": 38,
+      "4": 54,
+      "8": 58,
+      "16": 47,
+      "24": 20,
+      "32": 14
+    },
+    "wikitext2_ppl": 7.985067844390869,
+    "mean_rel_layer_error": 0.016419214857782822,
+    "arc_easy_acc": 0.7846666666666666,
+    "arc_easy_acc_norm": 0.7693333333333333,
+    "arc_challenge_acc": 0.4880546075085324,
+    "arc_challenge_acc_norm": 0.5068259385665529,
+    "hellaswag_acc": 0.48,
+    "hellaswag_acc_norm": 0.624,
+    "winogrande_acc": 0.6803472770323599,
+    "winogrande_acc_norm": 0.6803472770323599,
+    "piqa_acc": 0.77,
+    "piqa_acc_norm": 0.77,
+    "seconds": 1159.6408474445343
+  },
+  {
+    "name": "gilora-b4r32",
+    "mode": "uniform",
+    "bits": 4,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "bits_per_weight": 4.207540760869565,
+    "surrogate_distortion": 0.14905650759811592,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 1.0114741752766057e-08,
+      "geometric_mean": 2.834459909687434e-09,
+      "gain_ratio": 3.5684899681228672,
+      "bits_saved": 0.9176568583648799,
+      "log_spread_std": 3.64440434345766
+    },
+    "bit_histogram": {
+      "4": 252
+    },
+    "rank_histogram": {
+      "32": 252
+    },
+    "wikitext2_ppl": 7.337939739227295,
+    "mean_rel_layer_error": 0.004984140050111022,
+    "arc_easy_acc": 0.8333333333333334,
+    "arc_easy_acc_norm": 0.82,
+    "arc_challenge_acc": 0.5486348122866894,
+    "arc_challenge_acc_norm": 0.5656996587030717,
+    "hellaswag_acc": 0.5006666666666667,
+    "hellaswag_acc_norm": 0.644,
+    "winogrande_acc": 0.7095501183898973,
+    "winogrande_acc_norm": 0.7095501183898973,
+    "piqa_acc": 0.7873333333333333,
+    "piqa_acc_norm": 0.7926666666666666,
+    "seconds": 1190.5073845386505
+  },
+  {
+    "name": "allocNW-b4r32",
+    "mode": "lagrangian",
+    "bits": 4,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "no_omega": true,
+    "bits_per_weight": 4.204059103260869,
+    "surrogate_distortion": 3226812370.103795,
+    "nu": 0.6307706027443002,
+    "gap_bound": 15253789.239715219,
+    "coding_gain": {
+      "arithmetic_mean": 1121.617679439604,
+      "geometric_mean": 215.48577419885694,
+      "gain_ratio": 5.2050660124066495,
+      "bits_saved": 1.189958230193451,
+      "log_spread_std": 2.7179848916099982
+    },
+    "bit_histogram": {
+      "2": 39,
+      "3": 59,
+      "4": 63,
+      "5": 42,
+      "6": 29,
+      "8": 20
+    },
+    "rank_histogram": {
+      "0": 9,
+      "2": 46,
+      "4": 44,
+      "8": 64,
+      "16": 46,
+      "24": 24,
+      "32": 16,
+      "48": 3
+    },
+    "wikitext2_ppl": 7.733841419219971,
+    "mean_rel_layer_error": 0.013670057889499664,
+    "arc_easy_acc": 0.826,
+    "arc_easy_acc_norm": 0.8073333333333333,
+    "arc_challenge_acc": 0.5494880546075085,
+    "arc_challenge_acc_norm": 0.5588737201365188,
+    "hellaswag_acc": 0.494,
+    "hellaswag_acc_norm": 0.634,
+    "winogrande_acc": 0.7008681925808997,
+    "winogrande_acc_norm": 0.7008681925808997,
+    "piqa_acc": 0.776,
+    "piqa_acc_norm": 0.7833333333333333,
+    "seconds": 1166.642642736435
+  },
+  {
+    "name": "alloc-b4r32",
+    "mode": "lagrangian",
+    "bits": 4,
+    "rank": 32,
+    "method": "gilora",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "piqa"
+    ],
+    "bits_per_weight": 4.204021361714976,
+    "surrogate_distortion": 0.05842655749748105,
+    "nu": 1.0390076104000867e-11,
+    "gap_bound": 0.0002539846622768217,
+    "coding_gain": {
+      "arithmetic_mean": 1.1892723652886147e-08,
+      "geometric_mean": 3.2007142031676657e-09,
+      "gain_ratio": 3.7156468519170565,
+      "bits_saved": 0.9468066947248128,
+      "log_spread_std": 3.5212112602024686
+    },
+    "bit_histogram": {
+      "2": 30,
+      "3": 22,
+      "4": 85,
+      "5": 60,
+      "6": 39,
+      "8": 16
+    },
+    "rank_histogram": {
+      "0": 19,
+      "2": 25,
+      "4": 51,
+      "8": 60,
+      "16": 48,
+      "24": 31,
+      "32": 18
+    },
+    "wikitext2_ppl": 7.277265548706055,
+    "mean_rel_layer_error": 0.008237771958033045,
+    "arc_easy_acc": 0.8353333333333334,
+    "arc_easy_acc_norm": 0.8186666666666667,
+    "arc_challenge_acc": 0.5366894197952219,
+    "arc_challenge_acc_norm": 0.552901023890785,
+    "hellaswag_acc": 0.49666666666666665,
+    "hellaswag_acc_norm": 0.6353333333333333,
+    "winogrande_acc": 0.7198105761641673,
+    "winogrande_acc_norm": 0.7198105761641673,
+    "piqa_acc": 0.784,
+    "piqa_acc_norm": 0.7906666666666666,
+    "seconds": 1158.4560053348541
+  }
+]

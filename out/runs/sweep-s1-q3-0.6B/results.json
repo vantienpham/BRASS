@@ -1,0 +1,382 @@
+[
+  {
+    "name": "fp16",
+    "mode": "none",
+    "wikitext2_ppl": 12.660117149353027,
+    "bits_per_weight": 16.0
+  },
+  {
+    "name": "gilora-b2r32",
+    "mode": "uniform",
+    "bits": 2,
+    "rank": 32,
+    "method": "gilora",
+    "bits_per_weight": 2.7583333333333333,
+    "surrogate_distortion": 6.284424101172887,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 4.2097524760854846e-07,
+      "geometric_mean": 1.939818817608814e-07,
+      "gain_ratio": 2.1701781825556186,
+      "bits_saved": 0.5589067500298054,
+      "log_spread_std": 2.096150834851567
+    },
+    "bit_histogram": {
+      "2": 196
+    },
+    "rank_histogram": {
+      "32": 196
+    },
+    "wikitext2_ppl": 114.82263946533203,
+    "mean_rel_layer_error": 0.051094854432352454,
+    "seconds": 57.272624492645264
+  },
+  {
+    "name": "alloc-b2r32",
+    "mode": "lagrangian",
+    "bits": 2,
+    "rank": 32,
+    "method": "gilora",
+    "bits_per_weight": 2.757589285714286,
+    "surrogate_distortion": 1.9689038869217996,
+    "nu": 6.463456927426659e-09,
+    "gap_bound": 0.0021179455659791676,
+    "coding_gain": {
+      "arithmetic_mean": 6.245412521741968e-07,
+      "geometric_mean": 2.8023173762513045e-07,
+      "gain_ratio": 2.228659956459513,
+      "bits_saved": 0.5780882552361741,
+      "log_spread_std": 2.0201041070071204
+    },
+    "bit_histogram": {
+      "2": 86,
+      "3": 70,
+      "4": 26,
+      "5": 14
+    },
+    "rank_histogram": {
+      "0": 13,
+      "2": 46,
+      "4": 76,
+      "8": 55,
+      "16": 6
+    },
+    "wikitext2_ppl": 25.735483169555664,
+    "mean_rel_layer_error": 0.029545291952673122,
+    "seconds": 55.155468225479126
+  },
+  {
+    "name": "gilora-b3r16",
+    "mode": "uniform",
+    "bits": 3,
+    "rank": 16,
+    "method": "gilora",
+    "bits_per_weight": 3.3916666666666666,
+    "surrogate_distortion": 1.6709269240700337,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 4.981681582611808e-07,
+      "geometric_mean": 2.251464096213639e-07,
+      "gain_ratio": 2.2126409170768766,
+      "bits_saved": 0.5728846697207611,
+      "log_spread_std": 2.1000505572840256
+    },
+    "bit_histogram": {
+      "3": 196
+    },
+    "rank_histogram": {
+      "16": 196
+    },
+    "wikitext2_ppl": 17.941768646240234,
+    "mean_rel_layer_error": 0.014452650200446346,
+    "seconds": 54.83232498168945
+  },
+  {
+    "name": "alloc-b3r16",
+    "mode": "lagrangian",
+    "bits": 3,
+    "rank": 16,
+    "method": "gilora",
+    "bits_per_weight": 3.388764880952381,
+    "surrogate_distortion": 0.7873761159546708,
+    "nu": 2.470984091335676e-09,
+    "gap_bound": 0.00315779906149061,
+    "coding_gain": {
+      "arithmetic_mean": 6.252335267379359e-07,
+      "geometric_mean": 2.782323813480668e-07,
+      "gain_ratio": 2.247163050212236,
+      "bits_saved": 0.5840524038695913,
+      "log_spread_std": 2.0159774831191375
+    },
+    "bit_histogram": {
+      "2": 19,
+      "3": 109,
+      "4": 30,
+      "5": 27,
+      "6": 11
+    },
+    "rank_histogram": {
+      "0": 9,
+      "2": 48,
+      "4": 78,
+      "8": 56,
+      "16": 5
+    },
+    "wikitext2_ppl": 16.056833267211914,
+    "mean_rel_layer_error": 0.012919866380535711,
+    "seconds": 55.07042217254639
+  },
+  {
+    "name": "gilora-b3r32",
+    "mode": "uniform",
+    "bits": 3,
+    "rank": 32,
+    "method": "gilora",
+    "bits_per_weight": 3.7583333333333333,
+    "surrogate_distortion": 1.4095977233905568,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 4.2097524760854846e-07,
+      "geometric_mean": 1.939818817608814e-07,
+      "gain_ratio": 2.1701781825556186,
+      "bits_saved": 0.5589067500298054,
+      "log_spread_std": 2.096150834851567
+    },
+    "bit_histogram": {
+      "3": 196
+    },
+    "rank_histogram": {
+      "32": 196
+    },
+    "wikitext2_ppl": 17.56146812438965,
+    "mean_rel_layer_error": 0.013506434854422251,
+    "seconds": 55.00853896141052
+  },
+  {
+    "name": "alloc-b3r32",
+    "mode": "lagrangian",
+    "bits": 3,
+    "rank": 32,
+    "method": "gilora",
+    "bits_per_weight": 3.757589285714286,
+    "surrogate_distortion": 0.4867810646111524,
+    "nu": 1.3007873777886537e-09,
+    "gap_bound": 0.00042624200795378603,
+    "coding_gain": {
+      "arithmetic_mean": 6.176128341024757e-07,
+      "geometric_mean": 2.708704123204225e-07,
+      "gain_ratio": 2.2801044558970838,
+      "bits_saved": 0.594549959246057,
+      "log_spread_std": 2.033796061880328
+    },
+    "bit_histogram": {
+      "2": 8,
+      "3": 87,
+      "4": 53,
+      "5": 19,
+      "6": 29
+    },
+    "rank_histogram": {
+      "0": 3,
+      "2": 38,
+      "4": 82,
+      "8": 58,
+      "16": 15
+    },
+    "wikitext2_ppl": 14.560321807861328,
+    "mean_rel_layer_error": 0.008963754344479238,
+    "seconds": 55.0866322517395
+  },
+  {
+    "name": "gilora-b3r64",
+    "mode": "uniform",
+    "bits": 3,
+    "rank": 64,
+    "method": "gilora",
+    "bits_per_weight": 4.491666666666666,
+    "surrogate_distortion": 1.1482293985088619,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 3.434659918290767e-07,
+      "geometric_mean": 1.6113750904360244e-07,
+      "gain_ratio": 2.1315086342568303,
+      "bits_saved": 0.5459374496716335,
+      "log_spread_std": 2.0957517482769323
+    },
+    "bit_histogram": {
+      "3": 196
+    },
+    "rank_histogram": {
+      "64": 196
+    },
+    "wikitext2_ppl": 16.853973388671875,
+    "mean_rel_layer_error": 0.012050803221447403,
+    "seconds": 55.430708169937134
+  },
+  {
+    "name": "alloc-b3r64",
+    "mode": "lagrangian",
+    "bits": 3,
+    "rank": 64,
+    "method": "gilora",
+    "bits_per_weight": 4.489732142857143,
+    "surrogate_distortion": 0.20515313149746958,
+    "nu": 5.671754476429504e-10,
+    "gap_bound": 0.00048321533177733396,
+    "coding_gain": {
+      "arithmetic_mean": 6.183061318545978e-07,
+      "geometric_mean": 2.7200716848173756e-07,
+      "gain_ratio": 2.273124400749426,
+      "bits_saved": 0.5923383201758169,
+      "log_spread_std": 2.0228881126651217
+    },
+    "bit_histogram": {
+      "2": 4,
+      "3": 20,
+      "4": 85,
+      "5": 46,
+      "6": 36,
+      "8": 5
+    },
+    "rank_histogram": {
+      "0": 5,
+      "2": 39,
+      "4": 78,
+      "8": 58,
+      "16": 16
+    },
+    "wikitext2_ppl": 13.352936744689941,
+    "mean_rel_layer_error": 0.003956017888530518,
+    "seconds": 58.009812116622925
+  },
+  {
+    "name": "gilora-b4r16",
+    "mode": "uniform",
+    "bits": 4,
+    "rank": 16,
+    "method": "gilora",
+    "bits_per_weight": 4.391666666666667,
+    "surrogate_distortion": 0.5200216451237746,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 4.981681582611808e-07,
+      "geometric_mean": 2.251464096213639e-07,
+      "gain_ratio": 2.2126409170768766,
+      "bits_saved": 0.5728846697207611,
+      "log_spread_std": 2.1000505572840256
+    },
+    "bit_histogram": {
+      "4": 196
+    },
+    "rank_histogram": {
+      "16": 196
+    },
+    "wikitext2_ppl": 13.889545440673828,
+    "mean_rel_layer_error": 0.004483040891033803,
+    "seconds": 55.35734295845032
+  },
+  {
+    "name": "alloc-b4r16",
+    "mode": "lagrangian",
+    "bits": 4,
+    "rank": 16,
+    "method": "gilora",
+    "bits_per_weight": 4.391443452380952,
+    "surrogate_distortion": 0.23103509915280007,
+    "nu": 6.248892737781393e-10,
+    "gap_bound": 6.142911516948621e-05,
+    "coding_gain": {
+      "arithmetic_mean": 6.154990127157331e-07,
+      "geometric_mean": 2.70090309842673e-07,
+      "gain_ratio": 2.278863736630388,
+      "bits_saved": 0.5941573310236616,
+      "log_spread_std": 2.0252289784374518
+    },
+    "bit_histogram": {
+      "2": 4,
+      "3": 27,
+      "4": 88,
+      "5": 36,
+      "6": 37,
+      "8": 4
+    },
+    "rank_histogram": {
+      "0": 5,
+      "2": 38,
+      "4": 74,
+      "8": 60,
+      "16": 19
+    },
+    "wikitext2_ppl": 13.44840145111084,
+    "mean_rel_layer_error": 0.0043719532730916956,
+    "seconds": 55.74669098854065
+  },
+  {
+    "name": "gilora-b4r32",
+    "mode": "uniform",
+    "bits": 4,
+    "rank": 32,
+    "method": "gilora",
+    "bits_per_weight": 4.758333333333334,
+    "surrogate_distortion": 0.43872944688597726,
+    "nu": null,
+    "gap_bound": null,
+    "coding_gain": {
+      "arithmetic_mean": 4.2097524760854846e-07,
+      "geometric_mean": 1.939818817608814e-07,
+      "gain_ratio": 2.1701781825556186,
+      "bits_saved": 0.5589067500298054,
+      "log_spread_std": 2.096150834851567
+    },
+    "bit_histogram": {
+      "4": 196
+    },
+    "rank_histogram": {
+      "32": 196
+    },
+    "wikitext2_ppl": 13.765118598937988,
+    "mean_rel_layer_error": 0.004201891884553032,
+    "seconds": 55.50915503501892
+  },
+  {
+    "name": "alloc-b4r32",
+    "mode": "lagrangian",
+    "bits": 4,
+    "rank": 32,
+    "method": "gilora",
+    "bits_per_weight": 4.754092261904762,
+    "surrogate_distortion": 0.15028320794590777,
+    "nu": 3.711533418222307e-10,
+    "gap_bound": 0.0006932313041754473,
+    "coding_gain": {
+      "arithmetic_mean": 6.388525287912176e-07,
+      "geometric_mean": 2.6582277651991803e-07,
+      "gain_ratio": 2.4033024451663136,
+      "bits_saved": 0.6325091083963795,
+      "log_spread_std": 2.0661261357573038
+    },
+    "bit_histogram": {
+      "2": 3,
+      "3": 11,
+      "4": 75,
+      "5": 60,
+      "6": 33,
+      "8": 14
+    },
+    "rank_histogram": {
+      "0": 2,
+      "2": 36,
+      "4": 70,
+      "8": 63,
+      "16": 25
+    },
+    "wikitext2_ppl": 13.158367156982422,
+    "mean_rel_layer_error": 0.003079275155417416,
+    "seconds": 55.64613723754883
+  }
+]

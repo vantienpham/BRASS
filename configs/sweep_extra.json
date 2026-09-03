@@ -1,0 +1,291 @@
+[
+ {
+  "name": "gptq-b5",
+  "mode": "uniform",
+  "bits": 5,
+  "rank": 0,
+  "method": "gptq"
+ },
+ {
+  "name": "gptq-b6",
+  "mode": "uniform",
+  "bits": 6,
+  "rank": 0,
+  "method": "gptq"
+ },
+ {
+  "name": "allocT-2.25",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 2.25
+ },
+ {
+  "name": "allocTNW-2.25",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 2.25,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-2.5",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 2.5
+ },
+ {
+  "name": "allocTNW-2.5",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 2.5,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-2.75",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 2.75
+ },
+ {
+  "name": "allocTNW-2.75",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 2.75,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-3.0",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 3.0
+ },
+ {
+  "name": "allocTNW-3.0",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 3.0,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-3.25",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 3.25
+ },
+ {
+  "name": "allocTNW-3.25",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 3.25,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-3.5",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 3.5
+ },
+ {
+  "name": "allocTNW-3.5",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 3.5,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-4.0",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 4.0
+ },
+ {
+  "name": "allocTNW-4.0",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 4.0,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-4.5",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 4.5
+ },
+ {
+  "name": "allocTNW-4.5",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 4.5,
+  "no_omega": true
+ },
+ {
+  "name": "allocT-5.0",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 5.0
+ },
+ {
+  "name": "allocTNW-5.0",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "target_bits": 5.0,
+  "no_omega": true
+ },
+ {
+  "name": "giloraQ-b2r32",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "allocQ-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "giloraQ-b3r16",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 16,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "allocQ-b3r16",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 16,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "giloraQ-b3r32",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "allocQ-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "giloraQ-b3r64",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "allocQ-b3r64",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "giloraQ-b4r32",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "allocQ-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "L_bits": 4,
+  "R_bits": 8
+ },
+ {
+  "name": "giloraL-b2r32",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "n_loops": 1
+ },
+ {
+  "name": "allocL-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "n_loops": 1
+ },
+ {
+  "name": "giloraL-b3r32",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "n_loops": 1
+ },
+ {
+  "name": "allocL-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "n_loops": 1
+ }
+]

@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Zero-shot accuracy across models: mean over five multiple-choice benchmarks (\%, length-normalised), for the uniform reference and for \method{} at the same storage. The downstream picture matches the perplexity one, including where it turns: allocation buys a great deal at the budget where compression is doing real damage (most of all on Llama-3.2-3B, the model whose spectra are flattest) and nothing, or a little less than nothing, above it.}
+\label{tab:zeroshotmodels}
+\begin{tabular}{llrrrr}
+\toprule
+budget & configuration & Qwen3-0.6B & Qwen3-1.7B & Llama-3.2-3B & Qwen3-8B \\
+\midrule
+& FP16 (uncompressed) & 54.2 & 61.5 & 65.7 & 70.7 \\
+\midrule
+$b=2$, $r=32$ & uniform & 39.5 & 40.0 & 37.7 & 46.1 \\
+& \method{} & 43.5 & 42.4 & 45.3 & 49.4 \\
+& difference & $\mathbf{+4.0}$ & $\mathbf{+2.4}$ & $\mathbf{+7.5}$ & $\mathbf{+3.3}$ \\
+\midrule
+$b=3$, $r=32$ & uniform & 49.8 & 57.8 & 61.0 & 68.1 \\
+& \method{} & 49.6 & 56.9 & 60.1 & 67.0 \\
+& difference & $-0.1$ & $-1.0$ & $-0.9$ & $-1.1$ \\
+\midrule
+$b=4$, $r=32$ & uniform & 53.6 & 60.3 & 65.0 & 70.6 \\
+& \method{} & 53.6 & 61.3 & 62.7 & 70.3 \\
+& difference & $+0.0$ & $\mathbf{+1.0}$ & $-2.4$ & $-0.3$ \\
+\bottomrule
+\end{tabular}
+\end{table}

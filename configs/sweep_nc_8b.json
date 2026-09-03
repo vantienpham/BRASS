@@ -1,0 +1,26 @@
+[
+ {
+  "name": "gptqNC-b2",
+  "mode": "uniform",
+  "bits": 2,
+  "rank": 0,
+  "method": "gptq",
+  "beta": 1.0
+ },
+ {
+  "name": "gptqNC-b3",
+  "mode": "uniform",
+  "bits": 3,
+  "rank": 0,
+  "method": "gptq",
+  "beta": 1.0
+ },
+ {
+  "name": "gptqNC-b4",
+  "mode": "uniform",
+  "bits": 4,
+  "rank": 0,
+  "method": "gptq",
+  "beta": 1.0
+ }
+]

@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "hessian_dir": "out/runs/stats-q3-0.6B/hessians",
+  "run_dir": "out/runs/prof-q3-0.6B",
+  "bits": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "ranks": [
+    0,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "every": 4,
+  "kinds": null,
+  "damp_frac": 0.01,
+  "beta": 1.0,
+  "n_loops": 1,
+  "seqlen": 2048,
+  "resume": true
+}

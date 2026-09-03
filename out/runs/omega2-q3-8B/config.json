@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen3-8B-Base",
+  "stats": "out/runs/stats-q3-8B/stats.pt",
+  "out_stats": "out/runs/stats-q3-8B/stats.pt.omega2.pt",
+  "hessian_dir": "out/runs/stats-q3-8B/hessians",
+  "run_dir": "out/runs/omega2-q3-8B",
+  "probe_seqs": 16,
+  "seqlen": 2048,
+  "seed": 0,
+  "ref": [
+    3,
+    0
+  ],
+  "ref2": [
+    2,
+    32
+  ],
+  "damp_frac": 0.01,
+  "floor_frac": 0.001
+}

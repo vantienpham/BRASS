@@ -1,0 +1,7 @@
+{
+  "model": "Qwen/Qwen3-1.7B-Base",
+  "hessian_dir": "out/runs/stats-q3-1.7B/hessians",
+  "run_dir": "out/runs/cost-1.7B",
+  "rank": 32,
+  "bits": 3
+}

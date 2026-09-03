@@ -1,0 +1,16 @@
+{
+  "n_points": 10,
+  "points": [
+    "fp16",
+    "gilora-b2r32",
+    "allocNW-b2r32",
+    "alloc-b2r32",
+    "gilora-b3r32",
+    "allocNW-b3r32",
+    "alloc-b3r32",
+    "gilora-b4r32",
+    "allocNW-b4r32",
+    "alloc-b4r32"
+  ],
+  "wall_seconds": 11400.924268960953
+}

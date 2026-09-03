@@ -1,0 +1,25 @@
+{
+  "base_loss": 2.6349153220653534,
+  "refs": [
+    [
+      3,
+      0
+    ],
+    [
+      2,
+      32
+    ]
+  ],
+  "consistency": {
+    "n": 187,
+    "pearson_log2": 0.9437857644747627,
+    "median_abs_log2_ratio": 0.4820161959707079,
+    "p90_abs_log2_ratio": 1.907522971271844
+  },
+  "n_layers": 196,
+  "n_floored": 8,
+  "log2_omega_sd": 3.6023077609725918,
+  "log2_omega_iqr": 4.269329363551847,
+  "log2_omega_range": 18.114352631420342,
+  "wall_seconds": 359.8240120410919
+}

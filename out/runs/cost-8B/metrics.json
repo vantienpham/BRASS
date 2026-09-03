@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen3-8B-Base",
+  "n_layers": 252,
+  "widest_in": 12288,
+  "model_params_M": 8190.73536,
+  "model_fp16_MB": 15622.587890625,
+  "hessian_MB": 576.0,
+  "eigendecomposition": {
+    "seconds": 3.460538625717163,
+    "peak_MB": 6540.31494140625
+  },
+  "augmented factorization": {
+    "seconds": 6.444207668304443,
+    "peak_MB": 7576.5546875
+  },
+  "quantization pass": {
+    "seconds": 1.5361344814300537,
+    "peak_MB": 2126.1953125
+  },
+  "wall_seconds": 26.197108507156372
+}

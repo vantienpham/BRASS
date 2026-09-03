@@ -1,0 +1,66 @@
+[
+ {
+  "name": "allocC-b2r16",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 16,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b2r32",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 32,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b2r64",
+  "mode": "lagrangian",
+  "bits": 2,
+  "rank": 64,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b3r16",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 16,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b3r32",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 32,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b3r64",
+  "mode": "lagrangian",
+  "bits": 3,
+  "rank": 64,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b4r16",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 16,
+  "method": "gilora",
+  "rank_calibrated": true
+ },
+ {
+  "name": "allocC-b4r32",
+  "mode": "lagrangian",
+  "bits": 4,
+  "rank": 32,
+  "method": "gilora",
+  "rank_calibrated": true
+ }
+]

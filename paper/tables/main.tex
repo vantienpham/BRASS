@@ -1,0 +1,51 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.94}
+\caption{WikiText-2 perplexity ($\downarrow$) at matched effective bit-width. Each block fixes a uniform reference configuration $(b, r)$ and gives every method in it the same storage, which the block heading reports per model in effective bits per weight \eqref{eq:effbits}. The first two rows of a block are uniform, the last two allocated. Best in block in bold.}
+\label{tab:main}
+\begin{tabular}{lcccc}
+\toprule
+method & Qwen3-0.6B & Qwen3-1.7B & Llama-3.2-3B & Qwen3-8B \\
+\midrule
+FP16 (uncompressed) & 12.66 & 9.39 & 7.81 & 6.99 \\
+\midrule
+\multicolumn{5}{l}{\emph{budget of uniform $b=2$, $r=32$ --- 2.76 / 2.41 / 2.28 / 2.21 bits/weight}} \\
+\quad GPTQ + OLrC & 675.24 & 428.53 & 39.76 & \textbf{22.67} \\
+\quad GPTQ-intrinsic LoRA & 121.34 & 62.47 & 55.93 & 28.73 \\
+\quad \method{}, $\omega_\ell \equiv 1$ & 102.52 & 395.18 & 45.00 & 26.79 \\
+\quad \method{} & \textbf{25.87} & \textbf{34.56} & \textbf{25.05} & 23.44 \\
+\midrule
+\multicolumn{5}{l}{\emph{budget of uniform $b=3$, $r=16$ --- 3.39 / 3.21 / 3.15 / 3.11 bits/weight}} \\
+\quad GPTQ + OLrC & 21.27 & 13.18 & \textbf{9.55} & 8.40 \\
+\quad GPTQ-intrinsic LoRA & 17.94 & \textbf{12.31} & 9.71 & 8.37 \\
+\quad \method{}, $\omega_\ell \equiv 1$ & 33.93 & 49.58 & 14.70 & 10.59 \\
+\quad \method{} & \textbf{16.30} & 12.55 & 9.64 & \textbf{8.15} \\
+\midrule
+\multicolumn{5}{l}{\emph{budget of uniform $b=3$, $r=32$ --- 3.76 / 3.41 / 3.28 / 3.21 bits/weight}} \\
+\quad GPTQ + OLrC & 19.60 & 12.24 & 9.46 & 8.21 \\
+\quad GPTQ-intrinsic LoRA & 17.64 & 11.81 & 9.63 & 8.30 \\
+\quad \method{}, $\omega_\ell \equiv 1$ & 25.00 & 35.85 & 13.98 & 10.06 \\
+\quad \method{} & \textbf{14.88} & \textbf{11.68} & \textbf{9.35} & \textbf{7.99} \\
+\midrule
+\multicolumn{5}{l}{\emph{budget of uniform $b=3$, $r=64$ --- 4.49 / 3.80 / 3.56 / 3.41 bits/weight}} \\
+\quad GPTQ + OLrC & 17.98 & 11.56 & 9.31 & 8.01 \\
+\quad GPTQ-intrinsic LoRA & 16.84 & 11.64 & 9.53 & 8.20 \\
+\quad \method{}, $\omega_\ell \equiv 1$ & 17.98 & 20.30 & 12.07 & 8.97 \\
+\quad \method{} & \textbf{13.58} & \textbf{10.75} & \textbf{8.92} & \textbf{7.73} \\
+\midrule
+\multicolumn{5}{l}{\emph{budget of uniform $b=4$, $r=16$ --- 4.39 / 4.21 / 4.15 / 4.11 bits/weight}} \\
+\quad GPTQ + OLrC & 14.30 & 10.18 & \textbf{8.24} & 7.31 \\
+\quad GPTQ-intrinsic LoRA & 13.85 & \textbf{10.07} & 8.28 & 7.35 \\
+\quad \method{}, $\omega_\ell \equiv 1$ & 18.32 & 14.90 & 10.14 & 7.76 \\
+\quad \method{} & \textbf{13.66} & 10.31 & 8.37 & \textbf{7.31} \\
+\midrule
+\multicolumn{5}{l}{\emph{budget of uniform $b=4$, $r=32$ --- 4.76 / 4.41 / 4.28 / 4.21 bits/weight}} \\
+\quad GPTQ + OLrC & 14.04 & 10.02 & \textbf{8.22} & 7.28 \\
+\quad GPTQ-intrinsic LoRA & 13.74 & \textbf{10.00} & 8.26 & 7.34 \\
+\quad \method{}, $\omega_\ell \equiv 1$ & 16.79 & 12.58 & 9.80 & 7.73 \\
+\quad \method{} & \textbf{13.39} & 10.16 & 8.31 & \textbf{7.28} \\
+\bottomrule
+\end{tabular}
+\end{table}

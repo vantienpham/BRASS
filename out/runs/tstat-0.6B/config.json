@@ -1,0 +1,23 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "run_dir": "out/runs/tstat-0.6B",
+  "n_calib": 128,
+  "seqlen": 2048,
+  "seed": 0,
+  "calib_dataset": "wikitext2",
+  "save_hessians": false,
+  "sensitivity": false,
+  "sens_seqs": 8,
+  "sens_draws": 3,
+  "sens_scale": 0.02,
+  "max_blocks": null,
+  "bit_choices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "rotate_block": 1
+}

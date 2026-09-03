@@ -1,0 +1,39 @@
+{
+  "model": "Qwen/Qwen3-8B-Base",
+  "stats": "out/runs/stats-q3-8B/stats.pt.omega3.pt",
+  "hessian_dir": "out/runs/stats-q3-8B/hessians",
+  "plan": "configs/sweep_fill_8b.json",
+  "run_dir": "out/runs/sweep-q3-8B",
+  "seqlen": 2048,
+  "damp_frac": 0.01,
+  "lr_bits": 16.0,
+  "bit_choices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "rank_choices": [
+    0,
+    2,
+    4,
+    8,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128,
+    192,
+    256
+  ],
+  "tasks": [],
+  "task_limit": null,
+  "seed": 0,
+  "rank_calibration": null,
+  "rotate_block": 1,
+  "resume": true
+}

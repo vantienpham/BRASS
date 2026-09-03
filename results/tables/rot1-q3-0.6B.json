@@ -1,0 +1,2073 @@
+{
+  "n_layers": 196,
+  "coding_gain": {
+    "0": {
+      "arithmetic_mean": 40548.26126500782,
+      "geometric_mean": 3422.9551138945103,
+      "gain_ratio": 11.84598100641569,
+      "bits_saved": 1.7831628864747007,
+      "log_spread_std": 3.349150400583635
+    },
+    "8": {
+      "arithmetic_mean": 16178.472602156515,
+      "geometric_mean": 1610.9556496367022,
+      "gain_ratio": 10.042779641888362,
+      "bits_saved": 1.6640433643862367,
+      "log_spread_std": 3.110381200800526
+    },
+    "16": {
+      "arithmetic_mean": 13717.303946926892,
+      "geometric_mean": 1418.5683164556774,
+      "gain_ratio": 9.669822586479206,
+      "bits_saved": 1.6367447103135904,
+      "log_spread_std": 3.078653246999692
+    },
+    "32": {
+      "arithmetic_mean": 11406.621389885211,
+      "geometric_mean": 1220.602897915652,
+      "gain_ratio": 9.34507152929392,
+      "bits_saved": 1.612102853363637,
+      "log_spread_std": 3.052379912142116
+    },
+    "64": {
+      "arithmetic_mean": 9038.792045068354,
+      "geometric_mean": 1012.4776744597204,
+      "gain_ratio": 8.927398868218646,
+      "bits_saved": 1.5791199428489164,
+      "log_spread_std": 3.02613969486276
+    }
+  },
+  "by_kind": {
+    "down": {
+      "n": 28,
+      "median": 8.688369719274402,
+      "min": 4.584317935368147,
+      "max": 18.860946669589747
+    },
+    "gate": {
+      "n": 28,
+      "median": 12.230936471045936,
+      "min": 9.80048420724607,
+      "max": 15.540799684209718
+    },
+    "k": {
+      "n": 28,
+      "median": 12.695258139930576,
+      "min": 5.535104653752014,
+      "max": 18.725449896832213
+    },
+    "o": {
+      "n": 28,
+      "median": 8.865381125048003,
+      "min": 3.2078516129880597,
+      "max": 14.512557420229157
+    },
+    "q": {
+      "n": 28,
+      "median": 13.020497604893691,
+      "min": 5.727452845522723,
+      "max": 19.830299152351447
+    },
+    "up": {
+      "n": 28,
+      "median": 11.447968575842928,
+      "min": 8.818792400209466,
+      "max": 15.638275419976907
+    },
+    "v": {
+      "n": 28,
+      "median": 12.548415335554079,
+      "min": 5.414902199805037,
+      "max": 19.23486148623401
+    }
+  },
+  "log2_a": {
+    "range": 16.62244753936339,
+    "sd": 3.616870260292574,
+    "min": 3.2078516129880597,
+    "max": 19.830299152351447,
+    "iqr": 4.101004645364906
+  },
+  "per_layer": [
+    {
+      "name": "0.self_attn.q_proj",
+      "block": 0,
+      "kind": "q",
+      "log2_a": 7.401136234520484,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "0.self_attn.k_proj",
+      "block": 0,
+      "kind": "k",
+      "log2_a": 7.079654032597914,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "0.self_attn.v_proj",
+      "block": 0,
+      "kind": "v",
+      "log2_a": 6.687844934305972,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "0.self_attn.o_proj",
+      "block": 0,
+      "kind": "o",
+      "log2_a": 5.55986623397148,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "0.mlp.gate_proj",
+      "block": 0,
+      "kind": "gate",
+      "log2_a": 9.80048420724607,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "0.mlp.up_proj",
+      "block": 0,
+      "kind": "up",
+      "log2_a": 8.818792400209466,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "0.mlp.down_proj",
+      "block": 0,
+      "kind": "down",
+      "log2_a": 4.584317935368147,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "1.self_attn.q_proj",
+      "block": 1,
+      "kind": "q",
+      "log2_a": 5.727452845522723,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "1.self_attn.k_proj",
+      "block": 1,
+      "kind": "k",
+      "log2_a": 5.535104653752014,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "1.self_attn.v_proj",
+      "block": 1,
+      "kind": "v",
+      "log2_a": 5.414902199805037,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "1.self_attn.o_proj",
+      "block": 1,
+      "kind": "o",
+      "log2_a": 3.2078516129880597,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "1.mlp.gate_proj",
+      "block": 1,
+      "kind": "gate",
+      "log2_a": 13.096082850564486,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "1.mlp.up_proj",
+      "block": 1,
+      "kind": "up",
+      "log2_a": 11.364489544981444,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "1.mlp.down_proj",
+      "block": 1,
+      "kind": "down",
+      "log2_a": 5.0771879275205025,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "2.self_attn.q_proj",
+      "block": 2,
+      "kind": "q",
+      "log2_a": 6.790175545952707,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "2.self_attn.k_proj",
+      "block": 2,
+      "kind": "k",
+      "log2_a": 6.547965881637833,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "2.self_attn.v_proj",
+      "block": 2,
+      "kind": "v",
+      "log2_a": 6.441443688510336,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "2.self_attn.o_proj",
+      "block": 2,
+      "kind": "o",
+      "log2_a": 4.02379972661792,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "2.mlp.gate_proj",
+      "block": 2,
+      "kind": "gate",
+      "log2_a": 12.275795315325379,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "2.mlp.up_proj",
+      "block": 2,
+      "kind": "up",
+      "log2_a": 10.846917810197281,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "2.mlp.down_proj",
+      "block": 2,
+      "kind": "down",
+      "log2_a": 13.850218534478435,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "3.self_attn.q_proj",
+      "block": 3,
+      "kind": "q",
+      "log2_a": 9.684513047915248,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "3.self_attn.k_proj",
+      "block": 3,
+      "kind": "k",
+      "log2_a": 9.72030867458214,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "3.self_attn.v_proj",
+      "block": 3,
+      "kind": "v",
+      "log2_a": 9.66753206381686,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "3.self_attn.o_proj",
+      "block": 3,
+      "kind": "o",
+      "log2_a": 4.859626878773081,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "3.mlp.gate_proj",
+      "block": 3,
+      "kind": "gate",
+      "log2_a": 12.554261180692066,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "3.mlp.up_proj",
+      "block": 3,
+      "kind": "up",
+      "log2_a": 11.220499249460547,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "3.mlp.down_proj",
+      "block": 3,
+      "kind": "down",
+      "log2_a": 6.185289509838703,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "4.self_attn.q_proj",
+      "block": 4,
+      "kind": "q",
+      "log2_a": 9.737095670886015,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "4.self_attn.k_proj",
+      "block": 4,
+      "kind": "k",
+      "log2_a": 9.740788256608184,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "4.self_attn.v_proj",
+      "block": 4,
+      "kind": "v",
+      "log2_a": 9.731216393935973,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "4.self_attn.o_proj",
+      "block": 4,
+      "kind": "o",
+      "log2_a": 5.770646039856969,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "4.mlp.gate_proj",
+      "block": 4,
+      "kind": "gate",
+      "log2_a": 12.115659659404168,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "4.mlp.up_proj",
+      "block": 4,
+      "kind": "up",
+      "log2_a": 10.942140715482202,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "4.mlp.down_proj",
+      "block": 4,
+      "kind": "down",
+      "log2_a": 6.596558374632764,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "5.self_attn.q_proj",
+      "block": 5,
+      "kind": "q",
+      "log2_a": 10.63077351635392,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "5.self_attn.k_proj",
+      "block": 5,
+      "kind": "k",
+      "log2_a": 10.344522906748002,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "5.self_attn.v_proj",
+      "block": 5,
+      "kind": "v",
+      "log2_a": 10.550115726951207,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "5.self_attn.o_proj",
+      "block": 5,
+      "kind": "o",
+      "log2_a": 6.177373379452651,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "5.mlp.gate_proj",
+      "block": 5,
+      "kind": "gate",
+      "log2_a": 11.399291843570296,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "5.mlp.up_proj",
+      "block": 5,
+      "kind": "up",
+      "log2_a": 10.668925299477444,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "5.mlp.down_proj",
+      "block": 5,
+      "kind": "down",
+      "log2_a": 6.618208683163269,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "6.self_attn.q_proj",
+      "block": 6,
+      "kind": "q",
+      "log2_a": 9.873074225845585,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "6.self_attn.k_proj",
+      "block": 6,
+      "kind": "k",
+      "log2_a": 9.775971304966802,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "6.self_attn.v_proj",
+      "block": 6,
+      "kind": "v",
+      "log2_a": 9.632915816028387,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "6.self_attn.o_proj",
+      "block": 6,
+      "kind": "o",
+      "log2_a": 5.9674408026942025,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "6.mlp.gate_proj",
+      "block": 6,
+      "kind": "gate",
+      "log2_a": 11.556234343310358,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "6.mlp.up_proj",
+      "block": 6,
+      "kind": "up",
+      "log2_a": 10.892094655206874,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "6.mlp.down_proj",
+      "block": 6,
+      "kind": "down",
+      "log2_a": 6.814876473085238,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "7.self_attn.q_proj",
+      "block": 7,
+      "kind": "q",
+      "log2_a": 10.798298586863067,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "7.self_attn.k_proj",
+      "block": 7,
+      "kind": "k",
+      "log2_a": 10.53534998161488,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "7.self_attn.v_proj",
+      "block": 7,
+      "kind": "v",
+      "log2_a": 10.761675755675821,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "7.self_attn.o_proj",
+      "block": 7,
+      "kind": "o",
+      "log2_a": 6.378031676461054,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "7.mlp.gate_proj",
+      "block": 7,
+      "kind": "gate",
+      "log2_a": 11.746026728087116,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "7.mlp.up_proj",
+      "block": 7,
+      "kind": "up",
+      "log2_a": 11.063081627620697,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "7.mlp.down_proj",
+      "block": 7,
+      "kind": "down",
+      "log2_a": 6.9705141198688825,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "8.self_attn.q_proj",
+      "block": 8,
+      "kind": "q",
+      "log2_a": 11.075054851768538,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "8.self_attn.k_proj",
+      "block": 8,
+      "kind": "k",
+      "log2_a": 11.094301969390246,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "8.self_attn.v_proj",
+      "block": 8,
+      "kind": "v",
+      "log2_a": 10.758739633383392,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "8.self_attn.o_proj",
+      "block": 8,
+      "kind": "o",
+      "log2_a": 6.6546371398376705,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "8.mlp.gate_proj",
+      "block": 8,
+      "kind": "gate",
+      "log2_a": 11.717164460036807,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "8.mlp.up_proj",
+      "block": 8,
+      "kind": "up",
+      "log2_a": 11.058851817450233,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "8.mlp.down_proj",
+      "block": 8,
+      "kind": "down",
+      "log2_a": 7.037120903168546,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "9.self_attn.q_proj",
+      "block": 9,
+      "kind": "q",
+      "log2_a": 12.107569229228842,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "9.self_attn.k_proj",
+      "block": 9,
+      "kind": "k",
+      "log2_a": 12.026438808856614,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "9.self_attn.v_proj",
+      "block": 9,
+      "kind": "v",
+      "log2_a": 11.887547574889746,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "9.self_attn.o_proj",
+      "block": 9,
+      "kind": "o",
+      "log2_a": 7.956438347157114,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "9.mlp.gate_proj",
+      "block": 9,
+      "kind": "gate",
+      "log2_a": 12.049014984260747,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "9.mlp.up_proj",
+      "block": 9,
+      "kind": "up",
+      "log2_a": 11.352447038050345,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "9.mlp.down_proj",
+      "block": 9,
+      "kind": "down",
+      "log2_a": 7.47241938521754,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "10.self_attn.q_proj",
+      "block": 10,
+      "kind": "q",
+      "log2_a": 11.858955544572813,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "10.self_attn.k_proj",
+      "block": 10,
+      "kind": "k",
+      "log2_a": 11.598922169494127,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "10.self_attn.v_proj",
+      "block": 10,
+      "kind": "v",
+      "log2_a": 11.62484665355733,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "10.self_attn.o_proj",
+      "block": 10,
+      "kind": "o",
+      "log2_a": 7.752557679433852,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "10.mlp.gate_proj",
+      "block": 10,
+      "kind": "gate",
+      "log2_a": 12.186077626766496,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "10.mlp.up_proj",
+      "block": 10,
+      "kind": "up",
+      "log2_a": 11.531447606704415,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "10.mlp.down_proj",
+      "block": 10,
+      "kind": "down",
+      "log2_a": 8.15566675573424,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "11.self_attn.q_proj",
+      "block": 11,
+      "kind": "q",
+      "log2_a": 12.950395998611699,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "11.self_attn.k_proj",
+      "block": 11,
+      "kind": "k",
+      "log2_a": 12.629616481969972,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "11.self_attn.v_proj",
+      "block": 11,
+      "kind": "v",
+      "log2_a": 12.495171183934056,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "11.self_attn.o_proj",
+      "block": 11,
+      "kind": "o",
+      "log2_a": 9.315223544083116,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "11.mlp.gate_proj",
+      "block": 11,
+      "kind": "gate",
+      "log2_a": 11.501550053209886,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "11.mlp.up_proj",
+      "block": 11,
+      "kind": "up",
+      "log2_a": 11.064018228461949,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "11.mlp.down_proj",
+      "block": 11,
+      "kind": "down",
+      "log2_a": 8.017867557040743,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "12.self_attn.q_proj",
+      "block": 12,
+      "kind": "q",
+      "log2_a": 12.361827085357637,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "12.self_attn.k_proj",
+      "block": 12,
+      "kind": "k",
+      "log2_a": 12.043590013913064,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "12.self_attn.v_proj",
+      "block": 12,
+      "kind": "v",
+      "log2_a": 11.952629418349586,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "12.self_attn.o_proj",
+      "block": 12,
+      "kind": "o",
+      "log2_a": 7.877781276499599,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "12.mlp.gate_proj",
+      "block": 12,
+      "kind": "gate",
+      "log2_a": 11.252566704056852,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "12.mlp.up_proj",
+      "block": 12,
+      "kind": "up",
+      "log2_a": 10.96253662842154,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "12.mlp.down_proj",
+      "block": 12,
+      "kind": "down",
+      "log2_a": 8.057222345305261,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "13.self_attn.q_proj",
+      "block": 13,
+      "kind": "q",
+      "log2_a": 12.689214790390999,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "13.self_attn.k_proj",
+      "block": 13,
+      "kind": "k",
+      "log2_a": 12.322920930404857,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "13.self_attn.v_proj",
+      "block": 13,
+      "kind": "v",
+      "log2_a": 12.376057114071267,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "13.self_attn.o_proj",
+      "block": 13,
+      "kind": "o",
+      "log2_a": 8.778704602788666,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "13.mlp.gate_proj",
+      "block": 13,
+      "kind": "gate",
+      "log2_a": 11.420214168762557,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "13.mlp.up_proj",
+      "block": 13,
+      "kind": "up",
+      "log2_a": 11.045020996568482,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "13.mlp.down_proj",
+      "block": 13,
+      "kind": "down",
+      "log2_a": 8.1542914119515,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "14.self_attn.q_proj",
+      "block": 14,
+      "kind": "q",
+      "log2_a": 13.090599211175684,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "14.self_attn.k_proj",
+      "block": 14,
+      "kind": "k",
+      "log2_a": 12.760899797891181,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "14.self_attn.v_proj",
+      "block": 14,
+      "kind": "v",
+      "log2_a": 12.601659487174103,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "14.self_attn.o_proj",
+      "block": 14,
+      "kind": "o",
+      "log2_a": 8.084196041783796,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "14.mlp.gate_proj",
+      "block": 14,
+      "kind": "gate",
+      "log2_a": 11.47830141778844,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "14.mlp.up_proj",
+      "block": 14,
+      "kind": "up",
+      "log2_a": 11.112550188143302,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "14.mlp.down_proj",
+      "block": 14,
+      "kind": "down",
+      "log2_a": 8.408504545326487,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "15.self_attn.q_proj",
+      "block": 15,
+      "kind": "q",
+      "log2_a": 13.970058194035463,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "15.self_attn.k_proj",
+      "block": 15,
+      "kind": "k",
+      "log2_a": 13.349702254600393,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "15.self_attn.v_proj",
+      "block": 15,
+      "kind": "v",
+      "log2_a": 13.808212894312065,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "15.self_attn.o_proj",
+      "block": 15,
+      "kind": "o",
+      "log2_a": 8.95205764730734,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "15.mlp.gate_proj",
+      "block": 15,
+      "kind": "gate",
+      "log2_a": 11.91050449128377,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "15.mlp.up_proj",
+      "block": 15,
+      "kind": "up",
+      "log2_a": 11.566814356107445,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "15.mlp.down_proj",
+      "block": 15,
+      "kind": "down",
+      "log2_a": 8.968234893222318,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "16.self_attn.q_proj",
+      "block": 16,
+      "kind": "q",
+      "log2_a": 14.553144393257282,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "16.self_attn.k_proj",
+      "block": 16,
+      "kind": "k",
+      "log2_a": 14.104365258107915,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "16.self_attn.v_proj",
+      "block": 16,
+      "kind": "v",
+      "log2_a": 13.973933625001237,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "16.self_attn.o_proj",
+      "block": 16,
+      "kind": "o",
+      "log2_a": 9.648662344920611,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "16.mlp.gate_proj",
+      "block": 16,
+      "kind": "gate",
+      "log2_a": 12.123460220694318,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "16.mlp.up_proj",
+      "block": 16,
+      "kind": "up",
+      "log2_a": 12.010026178168204,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "16.mlp.down_proj",
+      "block": 16,
+      "kind": "down",
+      "log2_a": 10.559117470333971,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "17.self_attn.q_proj",
+      "block": 17,
+      "kind": "q",
+      "log2_a": 15.761705021486476,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "17.self_attn.k_proj",
+      "block": 17,
+      "kind": "k",
+      "log2_a": 15.166411784409934,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "17.self_attn.v_proj",
+      "block": 17,
+      "kind": "v",
+      "log2_a": 15.429730153516358,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "17.self_attn.o_proj",
+      "block": 17,
+      "kind": "o",
+      "log2_a": 10.914343173254126,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "17.mlp.gate_proj",
+      "block": 17,
+      "kind": "gate",
+      "log2_a": 12.843884666392913,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "17.mlp.up_proj",
+      "block": 17,
+      "kind": "up",
+      "log2_a": 12.62262928957193,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "17.mlp.down_proj",
+      "block": 17,
+      "kind": "down",
+      "log2_a": 10.722574564444294,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "18.self_attn.q_proj",
+      "block": 18,
+      "kind": "q",
+      "log2_a": 15.883257653605265,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "18.self_attn.k_proj",
+      "block": 18,
+      "kind": "k",
+      "log2_a": 15.223991971618252,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "18.self_attn.v_proj",
+      "block": 18,
+      "kind": "v",
+      "log2_a": 15.548903125992831,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "18.self_attn.o_proj",
+      "block": 18,
+      "kind": "o",
+      "log2_a": 10.221935105458297,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "18.mlp.gate_proj",
+      "block": 18,
+      "kind": "gate",
+      "log2_a": 13.15753131191045,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "18.mlp.up_proj",
+      "block": 18,
+      "kind": "up",
+      "log2_a": 12.909972557402032,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "18.mlp.down_proj",
+      "block": 18,
+      "kind": "down",
+      "log2_a": 11.418643339766788,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "19.self_attn.q_proj",
+      "block": 19,
+      "kind": "q",
+      "log2_a": 16.693479849772725,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "19.self_attn.k_proj",
+      "block": 19,
+      "kind": "k",
+      "log2_a": 15.922207386544033,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "19.self_attn.v_proj",
+      "block": 19,
+      "kind": "v",
+      "log2_a": 16.47879542701391,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "19.self_attn.o_proj",
+      "block": 19,
+      "kind": "o",
+      "log2_a": 11.269203363763426,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "19.mlp.gate_proj",
+      "block": 19,
+      "kind": "gate",
+      "log2_a": 13.209780370927946,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "19.mlp.up_proj",
+      "block": 19,
+      "kind": "up",
+      "log2_a": 13.281144408575603,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "19.mlp.down_proj",
+      "block": 19,
+      "kind": "down",
+      "log2_a": 12.58149414700044,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "20.self_attn.q_proj",
+      "block": 20,
+      "kind": "q",
+      "log2_a": 17.301115933275632,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "20.self_attn.k_proj",
+      "block": 20,
+      "kind": "k",
+      "log2_a": 16.64772500784196,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "20.self_attn.v_proj",
+      "block": 20,
+      "kind": "v",
+      "log2_a": 17.10848280608843,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "20.self_attn.o_proj",
+      "block": 20,
+      "kind": "o",
+      "log2_a": 11.597522865640938,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "20.mlp.gate_proj",
+      "block": 20,
+      "kind": "gate",
+      "log2_a": 13.390757064943262,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "20.mlp.up_proj",
+      "block": 20,
+      "kind": "up",
+      "log2_a": 13.485723496541592,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "20.mlp.down_proj",
+      "block": 20,
+      "kind": "down",
+      "log2_a": 12.829084950371147,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "21.self_attn.q_proj",
+      "block": 21,
+      "kind": "q",
+      "log2_a": 17.773653169009187,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "21.self_attn.k_proj",
+      "block": 21,
+      "kind": "k",
+      "log2_a": 17.25202247756316,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "21.self_attn.v_proj",
+      "block": 21,
+      "kind": "v",
+      "log2_a": 17.59105628232797,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "21.self_attn.o_proj",
+      "block": 21,
+      "kind": "o",
+      "log2_a": 12.026829070072267,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "21.mlp.gate_proj",
+      "block": 21,
+      "kind": "gate",
+      "log2_a": 13.438553101928601,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "21.mlp.up_proj",
+      "block": 21,
+      "kind": "up",
+      "log2_a": 13.706696952949176,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "21.mlp.down_proj",
+      "block": 21,
+      "kind": "down",
+      "log2_a": 13.547788559798574,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "22.self_attn.q_proj",
+      "block": 22,
+      "kind": "q",
+      "log2_a": 18.09749564519199,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "22.self_attn.k_proj",
+      "block": 22,
+      "kind": "k",
+      "log2_a": 17.498708629288426,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "22.self_attn.v_proj",
+      "block": 22,
+      "kind": "v",
+      "log2_a": 17.98005503554621,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "22.self_attn.o_proj",
+      "block": 22,
+      "kind": "o",
+      "log2_a": 12.378562879943964,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "22.mlp.gate_proj",
+      "block": 22,
+      "kind": "gate",
+      "log2_a": 13.54558476563671,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "22.mlp.up_proj",
+      "block": 22,
+      "kind": "up",
+      "log2_a": 13.832268275519011,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "22.mlp.down_proj",
+      "block": 22,
+      "kind": "down",
+      "log2_a": 13.713998591307021,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "23.self_attn.q_proj",
+      "block": 23,
+      "kind": "q",
+      "log2_a": 18.194019474686197,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "23.self_attn.k_proj",
+      "block": 23,
+      "kind": "k",
+      "log2_a": 17.947936778034176,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "23.self_attn.v_proj",
+      "block": 23,
+      "kind": "v",
+      "log2_a": 18.291105307088255,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "23.self_attn.o_proj",
+      "block": 23,
+      "kind": "o",
+      "log2_a": 12.407144162109338,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "23.mlp.gate_proj",
+      "block": 23,
+      "kind": "gate",
+      "log2_a": 13.611813372468166,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "23.mlp.up_proj",
+      "block": 23,
+      "kind": "up",
+      "log2_a": 13.977187156075164,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "23.mlp.down_proj",
+      "block": 23,
+      "kind": "down",
+      "log2_a": 13.81482957186259,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "24.self_attn.q_proj",
+      "block": 24,
+      "kind": "q",
+      "log2_a": 19.031720767853365,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "24.self_attn.k_proj",
+      "block": 24,
+      "kind": "k",
+      "log2_a": 18.48743199923984,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "24.self_attn.v_proj",
+      "block": 24,
+      "kind": "v",
+      "log2_a": 18.68413651037123,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "24.self_attn.o_proj",
+      "block": 24,
+      "kind": "o",
+      "log2_a": 12.654969243075751,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "24.mlp.gate_proj",
+      "block": 24,
+      "kind": "gate",
+      "log2_a": 13.505719560128286,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "24.mlp.up_proj",
+      "block": 24,
+      "kind": "up",
+      "log2_a": 13.916331004274587,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "24.mlp.down_proj",
+      "block": 24,
+      "kind": "down",
+      "log2_a": 14.102618505508666,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "25.self_attn.q_proj",
+      "block": 25,
+      "kind": "q",
+      "log2_a": 19.364998931538008,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "25.self_attn.k_proj",
+      "block": 25,
+      "kind": "k",
+      "log2_a": 18.5426366139846,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "25.self_attn.v_proj",
+      "block": 25,
+      "kind": "v",
+      "log2_a": 19.23486148623401,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "25.self_attn.o_proj",
+      "block": 25,
+      "kind": "o",
+      "log2_a": 13.139778413436593,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "25.mlp.gate_proj",
+      "block": 25,
+      "kind": "gate",
+      "log2_a": 13.551073184204446,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "25.mlp.up_proj",
+      "block": 25,
+      "kind": "up",
+      "log2_a": 14.05395259566741,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "25.mlp.down_proj",
+      "block": 25,
+      "kind": "down",
+      "log2_a": 14.392361039813276,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "26.self_attn.q_proj",
+      "block": 26,
+      "kind": "q",
+      "log2_a": 19.830299152351447,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "26.self_attn.k_proj",
+      "block": 26,
+      "kind": "k",
+      "log2_a": 18.725449896832213,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "26.self_attn.v_proj",
+      "block": 26,
+      "kind": "v",
+      "log2_a": 19.2247134794779,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "26.self_attn.o_proj",
+      "block": 26,
+      "kind": "o",
+      "log2_a": 14.512557420229157,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "26.mlp.gate_proj",
+      "block": 26,
+      "kind": "gate",
+      "log2_a": 14.1421679440299,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "26.mlp.up_proj",
+      "block": 26,
+      "kind": "up",
+      "log2_a": 14.578675211976053,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "26.mlp.down_proj",
+      "block": 26,
+      "kind": "down",
+      "log2_a": 15.159595082373693,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    },
+    {
+      "name": "27.self_attn.q_proj",
+      "block": 27,
+      "kind": "q",
+      "log2_a": 18.83543457204456,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 2048
+    },
+    {
+      "name": "27.self_attn.k_proj",
+      "block": 27,
+      "kind": "k",
+      "log2_a": 18.69839592876593,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "27.self_attn.v_proj",
+      "block": 27,
+      "kind": "v",
+      "log2_a": 19.01053804757959,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 1024
+    },
+    {
+      "name": "27.self_attn.o_proj",
+      "block": 27,
+      "kind": "o",
+      "log2_a": 13.852129916231208,
+      "omega": 1.0,
+      "N": 2048,
+      "Nout": 1024
+    },
+    {
+      "name": "27.mlp.gate_proj",
+      "block": 27,
+      "kind": "gate",
+      "log2_a": 15.540799684209718,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "27.mlp.up_proj",
+      "block": 27,
+      "kind": "up",
+      "log2_a": 15.638275419976907,
+      "omega": 1.0,
+      "N": 1024,
+      "Nout": 3072
+    },
+    {
+      "name": "27.mlp.down_proj",
+      "block": 27,
+      "kind": "down",
+      "log2_a": 18.860946669589747,
+      "omega": 1.0,
+      "N": 3072,
+      "Nout": 1024
+    }
+  ],
+  "tail": {
+    "down": {
+      "fractions": [
+        0.8358634928101994,
+        0.7816485461750031,
+        0.708812478575316,
+        0.6128167088799749
+      ],
+      "r_star_median": 3070.0
+    },
+    "gate": {
+      "fractions": [
+        0.42799688656024804,
+        0.37077736137033557,
+        0.31648032697453404,
+        0.2560715853748434
+      ],
+      "r_star_median": 1021.0
+    },
+    "k": {
+      "fractions": [
+        0.380327615354216,
+        0.31611252530154105,
+        0.2664335993668089,
+        0.21110395778931673
+      ],
+      "r_star_median": 1024.0
+    },
+    "o": {
+      "fractions": [
+        0.6619913541303812,
+        0.5872829112518296,
+        0.5010994814265209,
+        0.4028961364139002
+      ],
+      "r_star_median": 2042.0
+    },
+    "q": {
+      "fractions": [
+        0.380327615354216,
+        0.31611252530154105,
+        0.2664335993668089,
+        0.21110395778931673
+      ],
+      "r_star_median": 1024.0
+    },
+    "up": {
+      "fractions": [
+        0.42799688656024804,
+        0.37077736137033557,
+        0.31648032697453404,
+        0.2560715853748434
+      ],
+      "r_star_median": 1021.0
+    },
+    "v": {
+      "fractions": [
+        0.380327615354216,
+        0.31611252530154105,
+        0.2664335993668089,
+        0.21110395778931673
+      ],
+      "r_star_median": 1024.0
+    }
+  },
+  "allocations": {
+    "b2_r32": {
+      "bits_per_weight": 2.7583333333333333,
+      "bit_histogram": {
+        "2": 115,
+        "3": 44,
+        "4": 13,
+        "5": 11,
+        "6": 13
+      },
+      "rank_quantiles": [
+        0,
+        2,
+        4,
+        4,
+        16
+      ],
+      "surrogate_ratio": 10.345209706843569
+    },
+    "b3_r16": {
+      "bits_per_weight": 3.3916666666666666,
+      "bit_histogram": {
+        "2": 65,
+        "3": 61,
+        "4": 34,
+        "5": 12,
+        "6": 18,
+        "8": 6
+      },
+      "rank_quantiles": [
+        0,
+        2,
+        4,
+        8,
+        16
+      ],
+      "surrogate_ratio": 7.545401038708393
+    },
+    "b3_r32": {
+      "bits_per_weight": 3.7583333333333333,
+      "bit_histogram": {
+        "2": 47,
+        "3": 60,
+        "4": 37,
+        "5": 25,
+        "6": 12,
+        "8": 15
+      },
+      "rank_quantiles": [
+        0,
+        2,
+        4,
+        8,
+        24
+      ],
+      "surrogate_ratio": 10.584342467042879
+    },
+    "b3_r64": {
+      "bits_per_weight": 4.491666666666666,
+      "bit_histogram": {
+        "2": 28,
+        "3": 30,
+        "4": 56,
+        "5": 32,
+        "6": 26,
+        "8": 24
+      },
+      "rank_quantiles": [
+        0,
+        2,
+        4,
+        8,
+        24
+      ],
+      "surrogate_ratio": 22.655894519086342
+    },
+    "b4_r16": {
+      "bits_per_weight": 4.391666666666667,
+      "bit_histogram": {
+        "2": 29,
+        "3": 36,
+        "4": 53,
+        "5": 34,
+        "6": 21,
+        "8": 23
+      },
+      "rank_quantiles": [
+        0,
+        2,
+        4,
+        8,
+        16
+      ],
+      "surrogate_ratio": 9.289044167200398
+    },
+    "b4_r32": {
+      "bits_per_weight": 4.758333333333334,
+      "bit_histogram": {
+        "2": 24,
+        "3": 28,
+        "4": 41,
+        "5": 39,
+        "6": 38,
+        "8": 26
+      },
+      "rank_quantiles": [
+        0,
+        4,
+        4,
+        8,
+        24
+      ],
+      "surrogate_ratio": 12.4007899336946
+    }
+  },
+  "conditioning": {
+    "cond_median": 59047.14656872903,
+    "sigma_min2_median": 424.5366516113281
+  },
+  "lower_bound": {
+    "2.5": {
+      "distortion": 13207371.818053821,
+      "bits_per_weight": 2.497730654761905,
+      "bit_median": 2,
+      "rank_median": 0
+    },
+    "3.0": {
+      "distortion": 2647466.5000282857,
+      "bits_per_weight": 2.997730654761905,
+      "bit_median": 2,
+      "rank_median": 0
+    },
+    "3.5": {
+      "distortion": 756927.5426637228,
+      "bits_per_weight": 3.4956473214285713,
+      "bit_median": 3,
+      "rank_median": 0
+    },
+    "4.0": {
+      "distortion": 234851.5061339157,
+      "bits_per_weight": 3.999032738095238,
+      "bit_median": 4,
+      "rank_median": 0
+    },
+    "4.5": {
+      "distortion": 77730.89392904981,
+      "bits_per_weight": 4.499665178571429,
+      "bit_median": 4,
+      "rank_median": 0
+    }
+  }
+}
