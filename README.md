@@ -1,11 +1,11 @@
-# BRAID — Bit–Rank Allocation by Information-theoretic Distortion
+# BRASS — Bit–Rank Allocation for Low-Precision Plus Low-Rank Compression of Large Language Models
 
-Code and experimental results for *Bit–Rank Allocation for Low-Precision Plus
-Low-Rank Compression of Large Language Models*.
+Code and experimental results for *Bit–Rank Allocation for Low-Precision Plus Low-Rank
+Compression of Large Language Models*.
 
 Post-training compression increasingly represents a weight matrix `W` as a
 low-precision part `Q` plus a low-rank correction `LR`, and every method in that
-line applies **one** bit-width and **one** rank to the whole network. BRAID
+line applies **one** bit-width and **one** rank to the whole network. BRASS
 prices bits and rank in a single currency of *effective bit-width* and allocates
 both per layer, by solving a separable rate–distortion problem with a Lagrangian
 sweep. It is training-free: no backpropagation, no labelled data, and its cost
@@ -136,9 +136,9 @@ pytest tests/ -q -m gpu             # needs a GPU
 ## Citation
 
 ```bibtex
-@misc{pham2026braid,
+@misc{pham2026bitrank,
   title  = {Bit--Rank Allocation for Low-Precision Plus Low-Rank Compression of Large Language Models},
-  author = {Pham, Van Tien},
+  author = {Pham, Van Tien and Gillis, Nicolas},
   year   = {2026}
 }
 ```
